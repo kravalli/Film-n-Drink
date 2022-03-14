@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Film n\' Drink!</string>
+    <string name="second_fragment_label">Film n\' Drink!</string>
+    <string name="third_fragment_label">The Grand Tour Staffel 4/4</string>
+    <string name="next">Start</string>
+    <string name="previous">Previous</string>
+    <string name="test">Temp</string>
+    <string name="hello_first_fragment">Willkommen bei Film n\' Drink!</string>
+    <string name="Instruction">Drücke auf Start und wähle den Film, den du schauen möchtest.</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="film11">film11</string>
+    <string name="film10">film10</string>
+    <string name="film9">film9</string>
+    <string name="film8">film8</string>
+    <string name="film7">film7</string>
+    <string name="film6">film6</string>
+    <string name="film5">film5</string>
+    <string name="film4">film4</string>
+    <string name="film3">film3</string>
+    <string name="film2">film2</string>
+    <string name="film1">The Grand Tour Staffel 4/4</string>
+    <string name="film18">film18</string>
+    <string name="film12">film12</string>
+    <string name="film13">film13</string>
+    <string name="film14">film14</string>
+    <string name="film15">film15</string>
+    <string name="film16">film16</string>
+    <string name="film17">film17</string>
+</resources>
