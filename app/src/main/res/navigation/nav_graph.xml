@@ -6,16 +6,6 @@
     app:startDestination="@id/startFragment">
 
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.myapplication.Fragments.FilmSelectFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_filmselect">
-
-        <action
-            android:id="@+id/action_SecondFragment_to_difficultyFragment"
-            app:destination="@id/difficultyFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/difficultyFragment"
         android:name="com.example.myapplication.Fragments.DifficultyFragment"
         android:label="DifficultyFragment" >
@@ -28,11 +18,27 @@
         android:name="com.example.myapplication.Fragments.StartFragment"
         android:label="StartFragment" >
         <action
-            android:id="@+id/action_startFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_startFragment_to_filmSelectFragment"
+            app:destination="@id/filmSelectFragment" />
     </fragment>
     <fragment
         android:id="@+id/filmFragment"
         android:name="com.example.myapplication.Fragments.FilmFragment"
         android:label="FilmFragment" />
+    <fragment
+        android:id="@+id/filmSelectFragment"
+        android:name="com.example.myapplication.Fragments.FilmSelectFragment"
+        android:label="fragment_filmselect"
+        tools:layout="@layout/fragment_filmselect" >
+        <action
+            android:id="@+id/action_filmSelectFragment_to_difficultyFragment"
+            app:destination="@id/difficultyFragment" />
+        <action
+            android:id="@+id/action_filmSelectFragment_to_emailSendFragment"
+            app:destination="@id/emailSendFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailSendFragment"
+        android:name="com.example.myapplication.Fragments.EmailSendFragment"
+        android:label="EmailSendFragment" />
 </navigation>

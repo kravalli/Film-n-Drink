@@ -26,7 +26,7 @@ public class StartFragment extends Fragment {
         view.findViewById(R.id.btn_start).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(StartFragment.this).navigate(R.id.action_startFragment_to_SecondFragment);
+                NavHostFragment.findNavController(StartFragment.this).navigate(R.id.action_startFragment_to_filmSelectFragment);
             }
         });
     }
