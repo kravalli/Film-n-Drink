@@ -36,143 +36,84 @@ public class FilmSelectFragment extends Fragment {
         vM.setDifficulty(0);
 
         //Feedback Button
-        view.findViewById(R.id.btn_feedback).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //Sending an email screen
-                Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_emailSendFragment);
+        view.findViewById(R.id.btn_feedback).setOnClickListener(view119 -> {
+            //Sending an email screen
+            Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_emailSendFragment);
 
-            }
         });
 
-        /**
-         *  alle 18 "Filme"
-         */
-        view.findViewById(R.id.film1).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                vM.setSelectedFilm(1);
-                Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
-            }
+        //alle 18 "Filme"
+        view.findViewById(R.id.film1).setOnClickListener(view1 -> {
+            vM.setSelectedFilm(1);
+            Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
         });
-        view.findViewById(R.id.film2).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                vM.setSelectedFilm(2);
-                Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
-            }
+        view.findViewById(R.id.film2).setOnClickListener(view12 -> {
+            vM.setSelectedFilm(2);
+            Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
         });
-        view.findViewById(R.id.film3).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                vM.setSelectedFilm(3);
-                Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
-            }
+        view.findViewById(R.id.film3).setOnClickListener(view13 -> {
+            vM.setSelectedFilm(3);
+            Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
         });
-        view.findViewById(R.id.film4).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                vM.setSelectedFilm(4);
-                Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
-            }
+        view.findViewById(R.id.film4).setOnClickListener(view14 -> {
+            vM.setSelectedFilm(4);
+            Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
         });
-        view.findViewById(R.id.film5).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                vM.setSelectedFilm(5);
-                Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
-            }
+        view.findViewById(R.id.film5).setOnClickListener(view15 -> {
+            vM.setSelectedFilm(5);
+            Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
         });
-        view.findViewById(R.id.film6).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                vM.setSelectedFilm(6);
-                Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
-            }
+        view.findViewById(R.id.film6).setOnClickListener(view16 -> {
+            vM.setSelectedFilm(6);
+            Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
         });
-        view.findViewById(R.id.film7).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                vM.setSelectedFilm(7);
-                Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
-            }
+        view.findViewById(R.id.film7).setOnClickListener(view17 -> {
+            vM.setSelectedFilm(7);
+            Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
         });
-        view.findViewById(R.id.film8).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                vM.setSelectedFilm(8);
-                Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
-            }
+        view.findViewById(R.id.film8).setOnClickListener(view18 -> {
+            vM.setSelectedFilm(8);
+            Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
         });
-        view.findViewById(R.id.film9).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                vM.setSelectedFilm(9);
-                Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
-            }
+        view.findViewById(R.id.film9).setOnClickListener(view19 -> {
+            vM.setSelectedFilm(9);
+            Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
         });
-        view.findViewById(R.id.film10).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                vM.setSelectedFilm(10);
-                Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
-            }
+        view.findViewById(R.id.film10).setOnClickListener(view110 -> {
+            vM.setSelectedFilm(10);
+            Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
         });
-        view.findViewById(R.id.film11).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                vM.setSelectedFilm(11);
-                Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
-            }
+        view.findViewById(R.id.film11).setOnClickListener(view111 -> {
+            vM.setSelectedFilm(11);
+            Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
         });
-        view.findViewById(R.id.film12).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                vM.setSelectedFilm(12);
-                Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
-            }
+        view.findViewById(R.id.film12).setOnClickListener(view112 -> {
+            vM.setSelectedFilm(12);
+            Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
         });
-        view.findViewById(R.id.film13).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                vM.setSelectedFilm(13);
-                Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
-            }
+        view.findViewById(R.id.film13).setOnClickListener(view113 -> {
+            vM.setSelectedFilm(13);
+            Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
         });
-        view.findViewById(R.id.film14).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                vM.setSelectedFilm(14);
-                Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
-            }
+        view.findViewById(R.id.film14).setOnClickListener(view114 -> {
+            vM.setSelectedFilm(14);
+            Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
         });
-        view.findViewById(R.id.film15).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                vM.setSelectedFilm(15);
-                Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
-            }
+        view.findViewById(R.id.film15).setOnClickListener(view115 -> {
+            vM.setSelectedFilm(15);
+            Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
         });
-        view.findViewById(R.id.film16).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                vM.setSelectedFilm(16);
-                Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
-            }
+        view.findViewById(R.id.film16).setOnClickListener(view116 -> {
+            vM.setSelectedFilm(16);
+            Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
         });
-        view.findViewById(R.id.film17).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                vM.setSelectedFilm(17);
-                Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
-            }
+        view.findViewById(R.id.film17).setOnClickListener(view117 -> {
+            vM.setSelectedFilm(17);
+            Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
         });
-        view.findViewById(R.id.film18).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                vM.setSelectedFilm(18);
-                Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
-            }
+        view.findViewById(R.id.film18).setOnClickListener(view118 -> {
+            vM.setSelectedFilm(18);
+            Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
         });
 
     }
