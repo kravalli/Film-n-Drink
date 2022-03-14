@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -19,7 +18,7 @@ import com.example.myapplication.ViewModel.SelectedFilmViewModel;
 public class DifficultyFragment extends Fragment {
     private SelectedFilmViewModel vM;
     private LongLifeTextViewModel ll;
-    
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -57,7 +56,6 @@ public class DifficultyFragment extends Fragment {
     }
 
     public void createFilm(){
-        TextView text = requireView().findViewById(R.id.textView2);
         //vM = new ViewModelProvider(requireActivity()).get(SelectedFilmViewModel.class);
         switch (vM.getSelectedFilm()){
             case 1:
@@ -378,7 +376,7 @@ public class DifficultyFragment extends Fragment {
             default:
                 Toast.makeText(getContext(), "Bitte wähle einen Film", Toast. LENGTH_LONG).show();
         }
-        Navigation.findNavController(requireView()).navigate(R.id.action_difficultyFragment_to_film1Fragment);
+        Navigation.findNavController(requireView()).navigate(R.id.action_difficultyFragment_to_filmFragment);
 
     }
 
