@@ -29,4 +29,7 @@
     <string name="film15">film15</string>
     <string name="film16">film16</string>
     <string name="film17">film17</string>
+    <string name="senden">Senden</string>
+    <string name="nachricht">Nachricht</string>
+    <string name="betreff">Betreff</string>
 </resources>
