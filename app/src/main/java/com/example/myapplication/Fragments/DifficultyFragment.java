@@ -19,7 +19,7 @@ import com.example.myapplication.ViewModel.SelectedFilmViewModel;
 public class DifficultyFragment extends Fragment {
     private SelectedFilmViewModel vM;
     private LongLifeTextViewModel ll;
-    
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -378,7 +378,7 @@ public class DifficultyFragment extends Fragment {
             default:
                 Toast.makeText(getContext(), "Bitte wähle einen Film", Toast. LENGTH_LONG).show();
         }
-        Navigation.findNavController(requireView()).navigate(R.id.action_difficultyFragment_to_film1Fragment);
+        Navigation.findNavController(requireView()).navigate(R.id.action_difficultyFragment_to_filmFragment);
 
     }
 

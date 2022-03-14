@@ -3,18 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/startFragment">
 
-    <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.myapplication.Fragments.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_start">
-
-        <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-    </fragment>
     <fragment
         android:id="@+id/SecondFragment"
         android:name="com.example.myapplication.Fragments.FilmSelectFragment"
@@ -22,21 +12,27 @@
         tools:layout="@layout/fragment_filmselect">
 
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-        <action
             android:id="@+id/action_SecondFragment_to_difficultyFragment"
             app:destination="@id/difficultyFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/film1Fragment"
-        android:name="com.example.myapplication.Fragments.FilmFragment" />
     <fragment
         android:id="@+id/difficultyFragment"
         android:name="com.example.myapplication.Fragments.DifficultyFragment"
         android:label="DifficultyFragment" >
         <action
-            android:id="@+id/action_difficultyFragment_to_film1Fragment"
-            app:destination="@id/film1Fragment" />
+            android:id="@+id/action_difficultyFragment_to_filmFragment"
+            app:destination="@id/filmFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.myapplication.Fragments.StartFragment"
+        android:label="StartFragment" >
+        <action
+            android:id="@+id/action_startFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filmFragment"
+        android:name="com.example.myapplication.Fragments.FilmFragment"
+        android:label="FilmFragment" />
 </navigation>
