@@ -9,13 +9,16 @@
         android:id="@+id/subject"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="60dp"
+        android:background="@drawable/bordertextview"
         android:ems="10"
         android:hint="@string/betreff"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
+        android:padding="2dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
@@ -30,11 +33,15 @@
         <EditText
             android:id="@+id/email"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/bordertextview"
             android:ems="10"
             android:gravity="start|top"
             android:hint="@string/nachricht"
             android:inputType="textMultiLine"
+            android:padding="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="Autofill,TextFields" />
