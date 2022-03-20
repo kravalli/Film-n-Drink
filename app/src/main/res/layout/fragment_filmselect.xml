@@ -60,7 +60,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film1"
-                    android:textColor="@color/black" />
+                    android:textColor="?attr/android:textColor"/>
 
                 <Button
                     android:id="@+id/film2"
@@ -69,7 +69,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film2"
-                    android:textColor="@color/black" />
+                    android:textColor="?attr/android:textColor"/>
 
                 <Button
                     android:id="@+id/film3"
@@ -78,7 +78,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film3"
-                    android:textColor="@color/black" />
+                    android:textColor="?attr/android:textColor" />
 
                 <Button
                     android:id="@+id/film4"
@@ -87,7 +87,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film4"
-                    android:textColor="@color/black" />
+                    android:textColor="?attr/android:textColor"/>
 
                 <Button
                     android:id="@+id/film5"
@@ -96,7 +96,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film5"
-                    android:textColor="@color/black" />
+                    android:textColor="?attr/android:textColor"/>
 
                 <Button
                     android:id="@+id/film6"
@@ -105,7 +105,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film6"
-                    android:textColor="@color/black" />
+                    android:textColor="?attr/android:textColor"/>
 
                 <Button
                     android:id="@+id/film7"
@@ -114,7 +114,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film7"
-                    android:textColor="@color/black" />
+                    android:textColor="?attr/android:textColor"/>
 
                 <Button
                     android:id="@+id/film8"
@@ -123,7 +123,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film8"
-                    android:textColor="@color/black" />
+                    android:textColor="?attr/android:textColor"/>
 
                 <Button
                     android:id="@+id/film9"
@@ -132,7 +132,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film9"
-                    android:textColor="@color/black" />
+                    android:textColor="?attr/android:textColor"/>
 
                 <Button
                     android:id="@+id/film10"
@@ -141,7 +141,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film10"
-                    android:textColor="@color/black" />
+                    android:textColor="?attr/android:textColor"/>
 
                 <Button
                     android:id="@+id/film11"
@@ -150,7 +150,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film11"
-                    android:textColor="@color/black" />
+                    android:textColor="?attr/android:textColor"/>
 
                 <Button
                     android:id="@+id/film12"
@@ -159,7 +159,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film12"
-                    android:textColor="@color/black" />
+                    android:textColor="?attr/android:textColor"/>
 
                 <Button
                     android:id="@+id/film13"
@@ -168,7 +168,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film13"
-                    android:textColor="@color/black" />
+                    android:textColor="?attr/android:textColor"/>
 
                 <Button
                     android:id="@+id/film14"
@@ -177,7 +177,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film14"
-                    android:textColor="@color/black" />
+                    android:textColor="?attr/android:textColor"/>
 
                 <Button
                     android:id="@+id/film15"
@@ -186,7 +186,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film15"
-                    android:textColor="@color/black" />
+                    android:textColor="?attr/android:textColor"/>
 
                 <Button
                     android:id="@+id/film16"
@@ -195,7 +195,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film16"
-                    android:textColor="@color/black" />
+                    android:textColor="?attr/android:textColor"/>
 
                 <Button
                     android:id="@+id/film17"
@@ -204,7 +204,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film17"
-                    android:textColor="@color/black" />
+                    android:textColor="?attr/android:textColor"/>
 
                 <Button
                     android:id="@+id/film18"
@@ -213,7 +213,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film18"
-                    android:textColor="@color/black" />
+                    android:textColor="?attr/android:textColor"/>
             </LinearLayout>
         </ScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>

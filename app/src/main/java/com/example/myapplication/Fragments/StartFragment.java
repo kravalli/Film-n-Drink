@@ -14,10 +14,10 @@ import com.example.myapplication.R;
 public class StartFragment extends Fragment {
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         requireActivity().setTitle(R.string.first_fragment_label);
-        return inflater.inflate(R.layout.fragment_start, container, false);
 
+        return inflater.inflate(R.layout.fragment_start, container, false);
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
