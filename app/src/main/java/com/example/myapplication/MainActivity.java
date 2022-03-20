@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
