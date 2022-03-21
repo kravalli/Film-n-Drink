@@ -1,9 +1,13 @@
 package com.example.myapplication.Fragments;
 
 import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -12,6 +16,8 @@ import androidx.navigation.Navigation;
 
 import com.example.myapplication.R;
 import com.example.myapplication.ViewModel.SelectedFilmViewModel;
+
+import java.util.Timer;
 
 
 public class FilmSelectFragment extends Fragment {
@@ -35,6 +41,22 @@ public class FilmSelectFragment extends Fragment {
         vM.setSelectedFilm(0);
         vM.setDifficulty(0);
 
+        //Timer for missingMovie
+        new CountDownTimer(2000, 10){
+            public void onTick(long millisUntilFinished){ //milliesUntilFinished = current timestamp
+                //while timer is running
+            }
+
+            public void onFinish() {
+                ImageView imv = view.findViewById(R.id.imageView);
+                TextView mM = view.findViewById(R.id.missingmovie);
+                imv.animate().setDuration(1500);
+                imv.animate().alpha(1);
+                mM.animate().setDuration(1500);
+                mM.animate().alpha(1);
+            }
+        }.start();
+
         //Feedback Button
         view.findViewById(R.id.btn_feedback).setOnClickListener(view119 -> {
             //Sending an email screen
@@ -42,7 +64,7 @@ public class FilmSelectFragment extends Fragment {
 
         });
 
-        //alle 18 "Filme"
+        //all 18 movies
         view.findViewById(R.id.film1).setOnClickListener(view1 -> {
             vM.setSelectedFilm(1);
             Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);

@@ -6,6 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".Fragments.FilmSelectFragment">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="-5dp"
+        android:alpha="0"
+        android:src="@drawable/arrow_bg2"
+        app:layout_constraintBottom_toTopOf="@+id/btn_feedback"
+        app:layout_constraintEnd_toStartOf="@+id/btn_feedback"
+        app:tint="@color/light_grey"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/missingmovie"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:background="@drawable/roundedcorner"
+        android:padding="5dp"
+        android:text="@string/missingMovie"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView" />
+
     <Button
         android:id="@+id/btn_feedback"
         android:layout_width="50dp"
@@ -19,7 +44,8 @@
         app:iconPadding="0dp"
         app:iconSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <SearchView
         android:id="@+id/searchView"
@@ -78,7 +104,8 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film3"
-                    android:textColor="?attr/android:textColor" />
+                    android:textColor="?attr/android:textColor"
+                    tools:ignore="TextContrastCheck" />
 
                 <Button
                     android:id="@+id/film4"
@@ -141,7 +168,8 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film10"
-                    android:textColor="?attr/android:textColor"/>
+                    android:textColor="?attr/android:textColor"
+                    tools:ignore="TextContrastCheck" />
 
                 <Button
                     android:id="@+id/film11"
@@ -150,7 +178,8 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film11"
-                    android:textColor="?attr/android:textColor"/>
+                    android:textColor="?attr/android:textColor"
+                    tools:ignore="TextContrastCheck" />
 
                 <Button
                     android:id="@+id/film12"
@@ -159,7 +188,8 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film12"
-                    android:textColor="?attr/android:textColor"/>
+                    android:textColor="?attr/android:textColor"
+                    tools:ignore="TextContrastCheck" />
 
                 <Button
                     android:id="@+id/film13"
@@ -168,7 +198,8 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film13"
-                    android:textColor="?attr/android:textColor"/>
+                    android:textColor="?attr/android:textColor"
+                    tools:ignore="TextContrastCheck" />
 
                 <Button
                     android:id="@+id/film14"
