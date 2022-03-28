@@ -114,7 +114,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:text="@string/film4"
-                    android:textColor="?attr/android:textColor"/>
+                    android:textColor="?attr/android:textColor" />
 
                 <Button
                     android:id="@+id/film5"
