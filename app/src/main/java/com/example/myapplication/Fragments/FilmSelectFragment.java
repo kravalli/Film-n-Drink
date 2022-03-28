@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.SearchView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -15,7 +16,6 @@ import androidx.navigation.Navigation;
 
 import com.example.myapplication.R;
 import com.example.myapplication.ViewModel.SelectedFilmViewModel;
-
 
 
 public class FilmSelectFragment extends Fragment {
@@ -134,6 +134,60 @@ public class FilmSelectFragment extends Fragment {
         view.findViewById(R.id.film18).setOnClickListener(view118 -> {
             vM.setSelectedFilm(18);
             Navigation.findNavController(requireView()).navigate(R.id.action_filmSelectFragment_to_difficultyFragment);
+        });
+
+
+
+        //Get SearchView Text
+        SearchView sv = view.findViewById(R.id.searchView);
+        sv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                //Remove all movies that don't match input
+                TextView f1 = view.findViewById(R.id.film1);
+                TextView f2 = view.findViewById(R.id.film2);
+                TextView f3 = view.findViewById(R.id.film3);
+                TextView f4 = view.findViewById(R.id.film4);
+                TextView f5 = view.findViewById(R.id.film5);
+                TextView f6 = view.findViewById(R.id.film6);
+                TextView f7 = view.findViewById(R.id.film7);
+                TextView f8 = view.findViewById(R.id.film8);
+                TextView f9 = view.findViewById(R.id.film9);
+                TextView f10 = view.findViewById(R.id.film10);
+                TextView f11 = view.findViewById(R.id.film11);
+                TextView f12 = view.findViewById(R.id.film12);
+                TextView f13 = view.findViewById(R.id.film13);
+                TextView f14 = view.findViewById(R.id.film14);
+                TextView f15 = view.findViewById(R.id.film15);
+                TextView f16 = view.findViewById(R.id.film16);
+                TextView f17 = view.findViewById(R.id.film17);
+                TextView f18 = view.findViewById(R.id.film18);
+                TextView[] all = new TextView[]{f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13,f14,f15,f16,f17,f18};
+
+                for (TextView textView : all) {
+                    textView.setVisibility(View.VISIBLE);
+                }
+
+
+                //check all
+                for (TextView textView : all) {
+                    if (!textView.getText().toString().toLowerCase().contains(newText.toLowerCase())) {
+                        textView.setVisibility(View.GONE);
+                    }
+                }
+                for (TextView textView : all) {
+                    if (newText.equals("")) {
+                        textView.setVisibility(View.VISIBLE);
+                    }
+                }
+                return false;
+            }
         });
 
     }
