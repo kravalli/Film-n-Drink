@@ -2,7 +2,6 @@ package com.example.myapplication.Fragments;
 
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +16,6 @@ import androidx.navigation.Navigation;
 import com.example.myapplication.R;
 import com.example.myapplication.ViewModel.SelectedFilmViewModel;
 
-import java.util.Timer;
 
 
 public class FilmSelectFragment extends Fragment {
