@@ -53,7 +53,7 @@ public class DifficultyFragment extends Fragment {
         switch (vM.getSelectedFilm()){
 
             case 1:
-                ll.setLlHeader("Grand Tour Staffel 4/4");
+                ll.setLlHeader(getString(R.string.film1));
                 switch (vM.getDifficulty()){
                     case 1:
                         ll.setLlText("Einfacher Text");
@@ -65,11 +65,11 @@ public class DifficultyFragment extends Fragment {
                         ll.setLlText("Jedes Mal, wenn ein Auto zu schaden kommt, musst du trinken!");
                         break;
                     default:
-                        Toast.makeText(getContext(), "Bitte wähle eine Schwierigkeitsstufe", Toast. LENGTH_LONG).show();
+                        Toast.makeText(getContext(), getString(R.string.ChooseDifficulty), Toast. LENGTH_LONG).show();
                 }
                 break;
             case 2:
-                ll.setLlHeader("Film2");
+                ll.setLlHeader(getString(R.string.film2));
                 switch (vM.getDifficulty()){
                     case 1:
                         ll.setLlText("Einfacher Text2");
@@ -81,11 +81,11 @@ public class DifficultyFragment extends Fragment {
                         ll.setLlText("Schwerer Text2");
                         break;
                     default:
-                        Toast.makeText(getContext(), "Bitte wähle eine Schwierigkeitsstufe", Toast. LENGTH_LONG).show();
+                        Toast.makeText(getContext(), getString(R.string.ChooseDifficulty), Toast. LENGTH_LONG).show();
                 }
                 break;
             case 3:
-                ll.setLlHeader("Film3");
+                ll.setLlHeader(getString(R.string.film3));
                 switch (vM.getDifficulty()){
                     case 1:
                         ll.setLlText("Einfacher Text3");
@@ -97,11 +97,11 @@ public class DifficultyFragment extends Fragment {
                         ll.setLlText("Schwerer Text3");
                         break;
                     default:
-                        Toast.makeText(getContext(), "Bitte wähle eine Schwierigkeitsstufe", Toast. LENGTH_LONG).show();
+                        Toast.makeText(getContext(), getString(R.string.ChooseDifficulty), Toast. LENGTH_LONG).show();
                 }
                 break;
             case 4:
-                ll.setLlHeader("Film4");
+                ll.setLlHeader(getString(R.string.film4));
                 switch (vM.getDifficulty()){
                     case 1:
                         ll.setLlText("Einfacher Text4");
@@ -113,11 +113,11 @@ public class DifficultyFragment extends Fragment {
                         ll.setLlText("Schwerer Text4");
                         break;
                     default:
-                        Toast.makeText(getContext(), "Bitte wähle eine Schwierigkeitsstufe", Toast. LENGTH_LONG).show();
+                        Toast.makeText(getContext(), getString(R.string.ChooseDifficulty), Toast. LENGTH_LONG).show();
                 }
                 break;
             case 5:
-                ll.setLlHeader("Film5");
+                ll.setLlHeader(getString(R.string.film5));
                 switch (vM.getDifficulty()){
                     case 1:
                         ll.setLlText("Einfacher Text5");
@@ -129,11 +129,11 @@ public class DifficultyFragment extends Fragment {
                         ll.setLlText("Schwerer Text5");
                         break;
                     default:
-                        Toast.makeText(getContext(), "Bitte wähle eine Schwierigkeitsstufe", Toast. LENGTH_LONG).show();
+                        Toast.makeText(getContext(), getString(R.string.ChooseDifficulty), Toast. LENGTH_LONG).show();
                 }
                 break;
             case 6:
-                ll.setLlHeader("Film6");
+                ll.setLlHeader(getString(R.string.film6));
                 switch (vM.getDifficulty()){
                     case 1:
                         ll.setLlText("Einfacher Text6");
@@ -145,11 +145,11 @@ public class DifficultyFragment extends Fragment {
                         ll.setLlText("Schwerer Text6");
                         break;
                     default:
-                        Toast.makeText(getContext(), "Bitte wähle eine Schwierigkeitsstufe", Toast. LENGTH_LONG).show();
+                        Toast.makeText(getContext(), getString(R.string.ChooseDifficulty), Toast. LENGTH_LONG).show();
                 }
                 break;
             case 7:
-                ll.setLlHeader("Film7");
+                ll.setLlHeader(getString(R.string.film7));
                 switch (vM.getDifficulty()){
                     case 1:
                         ll.setLlText("Einfacher Text7");
@@ -161,11 +161,11 @@ public class DifficultyFragment extends Fragment {
                         ll.setLlText("Schwerer Text7");
                         break;
                     default:
-                        Toast.makeText(getContext(), "Bitte wähle eine Schwierigkeitsstufe", Toast. LENGTH_LONG).show();
+                        Toast.makeText(getContext(), getString(R.string.ChooseDifficulty), Toast. LENGTH_LONG).show();
                 }
                 break;
             case 8:
-                ll.setLlHeader("Film8");
+                ll.setLlHeader(getString(R.string.film8));
                 switch (vM.getDifficulty()){
                     case 1:
                         ll.setLlText("Einfacher Text8");
@@ -177,11 +177,11 @@ public class DifficultyFragment extends Fragment {
                         ll.setLlText("Schwerer Text8");
                         break;
                     default:
-                        Toast.makeText(getContext(), "Bitte wähle eine Schwierigkeitsstufe", Toast. LENGTH_LONG).show();
+                        Toast.makeText(getContext(), getString(R.string.ChooseDifficulty), Toast. LENGTH_LONG).show();
                 }
                 break;
             case 9:
-                ll.setLlHeader("Film9");
+                ll.setLlHeader(getString(R.string.film9));
                 switch (vM.getDifficulty()){
                     case 1:
                         ll.setLlText("Einfacher Text9");
@@ -193,11 +193,11 @@ public class DifficultyFragment extends Fragment {
                         ll.setLlText("Schwerer Text9");
                         break;
                     default:
-                        Toast.makeText(getContext(), "Bitte wähle eine Schwierigkeitsstufe", Toast. LENGTH_LONG).show();
+                        Toast.makeText(getContext(), getString(R.string.ChooseDifficulty), Toast. LENGTH_LONG).show();
                 }
                 break;
             case 10:
-                ll.setLlHeader("Film10");
+                ll.setLlHeader(getString(R.string.film10));
                 switch (vM.getDifficulty()){
                     case 1:
                         ll.setLlText("Einfacher Text10");
@@ -209,11 +209,11 @@ public class DifficultyFragment extends Fragment {
                         ll.setLlText("Schwerer Text10");
                         break;
                     default:
-                        Toast.makeText(getContext(), "Bitte wähle eine Schwierigkeitsstufe", Toast. LENGTH_LONG).show();
+                        Toast.makeText(getContext(), getString(R.string.ChooseDifficulty), Toast. LENGTH_LONG).show();
                 }
                 break;
             case 11:
-                ll.setLlHeader("Film11");
+                ll.setLlHeader(getString(R.string.film11));
                 switch (vM.getDifficulty()){
                     case 1:
                         ll.setLlText("Einfacher Text11");
@@ -225,11 +225,11 @@ public class DifficultyFragment extends Fragment {
                         ll.setLlText("Schwerer Text11");
                         break;
                     default:
-                        Toast.makeText(getContext(), "Bitte wähle eine Schwierigkeitsstufe", Toast. LENGTH_LONG).show();
+                        Toast.makeText(getContext(), getString(R.string.ChooseDifficulty), Toast. LENGTH_LONG).show();
                 }
                 break;
             case 12:
-                ll.setLlHeader("Film12");
+                ll.setLlHeader(getString(R.string.film12));
                 switch (vM.getDifficulty()){
                     case 1:
                         ll.setLlText("Einfacher Text12");
@@ -241,11 +241,11 @@ public class DifficultyFragment extends Fragment {
                         ll.setLlText("Schwerer Text12");
                         break;
                     default:
-                        Toast.makeText(getContext(), "Bitte wähle eine Schwierigkeitsstufe", Toast. LENGTH_LONG).show();
+                        Toast.makeText(getContext(), getString(R.string.ChooseDifficulty), Toast. LENGTH_LONG).show();
                 }
                 break;
             case 13:
-                ll.setLlHeader("Film13");
+                ll.setLlHeader(getString(R.string.film13));
                 switch (vM.getDifficulty()){
                     case 1:
                         ll.setLlText("Einfacher Text13");
@@ -257,11 +257,11 @@ public class DifficultyFragment extends Fragment {
                         ll.setLlText("Schwerer Text13");
                         break;
                     default:
-                        Toast.makeText(getContext(), "Bitte wähle eine Schwierigkeitsstufe", Toast. LENGTH_LONG).show();
+                        Toast.makeText(getContext(), getString(R.string.ChooseDifficulty), Toast. LENGTH_LONG).show();
                 }
                 break;
             case 14:
-                ll.setLlHeader("Film14");
+                ll.setLlHeader(getString(R.string.film14));
                 switch (vM.getDifficulty()){
                     case 1:
                         ll.setLlText("Einfacher Text14");
@@ -273,11 +273,11 @@ public class DifficultyFragment extends Fragment {
                         ll.setLlText("Schwerer Text14");
                         break;
                     default:
-                        Toast.makeText(getContext(), "Bitte wähle eine Schwierigkeitsstufe", Toast. LENGTH_LONG).show();
+                        Toast.makeText(getContext(), getString(R.string.ChooseDifficulty), Toast. LENGTH_LONG).show();
                 }
                 break;
             case 15:
-                ll.setLlHeader("Film15");
+                ll.setLlHeader(getString(R.string.film15));
                 switch (vM.getDifficulty()){
                     case 1:
                         ll.setLlText("Einfacher Text15");
@@ -289,11 +289,11 @@ public class DifficultyFragment extends Fragment {
                         ll.setLlText("Schwerer Text15");
                         break;
                     default:
-                        Toast.makeText(getContext(), "Bitte wähle eine Schwierigkeitsstufe", Toast. LENGTH_LONG).show();
+                        Toast.makeText(getContext(), getString(R.string.ChooseDifficulty), Toast. LENGTH_LONG).show();
                 }
                 break;
             case 16:
-                ll.setLlHeader("Film16");
+                ll.setLlHeader(getString(R.string.film16));
                 switch (vM.getDifficulty()){
                     case 1:
                         ll.setLlText("Einfacher Text16");
@@ -305,11 +305,11 @@ public class DifficultyFragment extends Fragment {
                         ll.setLlText("Schwerer Text16");
                         break;
                     default:
-                        Toast.makeText(getContext(), "Bitte wähle eine Schwierigkeitsstufe", Toast. LENGTH_LONG).show();
+                        Toast.makeText(getContext(), getString(R.string.ChooseDifficulty), Toast. LENGTH_LONG).show();
                 }
                 break;
             case 17:
-                ll.setLlHeader("Film17");
+                ll.setLlHeader(getString(R.string.film17));
                 switch (vM.getDifficulty()){
                     case 1:
                         ll.setLlText("Einfacher Text17");
@@ -321,11 +321,11 @@ public class DifficultyFragment extends Fragment {
                         ll.setLlText("Schwerer Text17");
                         break;
                     default:
-                        Toast.makeText(getContext(), "Bitte wähle eine Schwierigkeitsstufe", Toast. LENGTH_LONG).show();
+                        Toast.makeText(getContext(), getString(R.string.ChooseDifficulty), Toast. LENGTH_LONG).show();
                 }
                 break;
             case 18:
-                ll.setLlHeader("Film18");
+                ll.setLlHeader(getString(R.string.film18));
                 switch (vM.getDifficulty()){
                     case 1:
                         ll.setLlText("Einfacher Text18");
@@ -337,11 +337,11 @@ public class DifficultyFragment extends Fragment {
                         ll.setLlText("Schwerer Text18");
                         break;
                     default:
-                        Toast.makeText(getContext(), "Bitte wähle eine Schwierigkeitsstufe", Toast. LENGTH_LONG).show();
+                        Toast.makeText(getContext(), getString(R.string.ChooseDifficulty), Toast. LENGTH_LONG).show();
                 }
                 break;
             default:
-                Toast.makeText(getContext(), "Bitte wähle einen Film", Toast. LENGTH_LONG).show();
+                Toast.makeText(getContext(), getString(R.string.ChooseMovie), Toast. LENGTH_LONG).show();
         }
         Navigation.findNavController(requireView()).navigate(R.id.action_difficultyFragment_to_filmFragment);
 
