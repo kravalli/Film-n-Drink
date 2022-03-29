@@ -6,7 +6,6 @@
     <string name="FilmSelectFragmentHeader">Film n\' Drink!</string>
     <string name="next">Start</string>
     <string name="previous">Previous</string>
-    <string name="test">Temp</string>
     <string name="hello_first_fragment">Willkommen bei Film n\' Drink!</string>
     <string name="Instruction">Drücke auf Start und wähle den Film, den du schauen möchtest.</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
@@ -38,5 +37,4 @@
     <string name="ChooseEmailApp">Wähle eine App um die E-Mail zu versenden</string>
     <string name="ChooseDifficulty">Bitte wähle eine Schwierigkeitsstufe</string>
     <string name="ChooseMovie">Bitte wähle einen Film</string>
-    <string name="test12312">test</string>
 </resources>
