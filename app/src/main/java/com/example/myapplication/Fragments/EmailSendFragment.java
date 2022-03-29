@@ -32,7 +32,7 @@ public class EmailSendFragment extends Fragment {
 
         Button send = getView().findViewById(R.id.btn_emailSend);
         send.setOnClickListener(view1 -> {
-            String toS = "valentin2002.pf@gmail.com";
+            String toS = getString(R.string.myEmail);
             String subjectS = subject.getText().toString();
             String messageS = message.getText().toString();
 
@@ -42,7 +42,7 @@ public class EmailSendFragment extends Fragment {
             email.putExtra(Intent.EXTRA_TEXT, messageS);
 
             email.setType("message/rfc822");
-            startActivity(Intent.createChooser(email, "Choose app to send mail"));
+            startActivity(Intent.createChooser(email, getString(R.string.ChooseEmailApp)));
         });
     }
 
