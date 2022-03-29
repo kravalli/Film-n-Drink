@@ -38,7 +38,7 @@
             android:background="@drawable/bordertextview"
             android:ems="10"
             android:gravity="start|top"
-            android:hint="@string/nachricht"
+            android:hint="@string/Nachricht"
             android:inputType="textMultiLine"
             android:padding="2dp"
             app:layout_constraintBottom_toBottomOf="parent"
