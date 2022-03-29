@@ -15,7 +15,7 @@ public class StartFragment extends Fragment {
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        requireActivity().setTitle(R.string.first_fragment_label);
+        requireActivity().setTitle(R.string.StartFragmentHeader);
 
         return inflater.inflate(R.layout.fragment_start, container, false);
     }

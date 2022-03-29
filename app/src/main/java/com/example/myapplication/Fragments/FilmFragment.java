@@ -15,7 +15,6 @@ import com.example.myapplication.ViewModel.LongLifeTextViewModel;
 
 
 public class FilmFragment extends Fragment {
-    private LongLifeTextViewModel ll;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -25,11 +24,10 @@ public class FilmFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        ll = new ViewModelProvider(requireActivity()).get(LongLifeTextViewModel.class);
+        LongLifeTextViewModel ll = new ViewModelProvider(requireActivity()).get(LongLifeTextViewModel.class);
         requireActivity().setTitle(ll.getLlHeader());
         TextView tV = view.findViewById(R.id.textView2);
         tV.setText(ll.getLlText());
-
     }
 
     @Override

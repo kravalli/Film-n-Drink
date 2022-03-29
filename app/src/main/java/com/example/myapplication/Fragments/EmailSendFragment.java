@@ -13,10 +13,12 @@ import androidx.fragment.app.Fragment;
 
 import com.example.myapplication.R;
 
+import java.util.Objects;
+
 public class EmailSendFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        requireActivity().setTitle("Email senden");
+        requireActivity().setTitle(getString(R.string.EmailSendFragmentHeader));
 
 
         return inflater.inflate(R.layout.fragment_emailsend, container, false);
@@ -25,25 +27,22 @@ public class EmailSendFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        EditText subject = getView().findViewById(R.id.subject);
+        EditText subject = Objects.requireNonNull(getView()).findViewById(R.id.subject);
         EditText message = getView().findViewById(R.id.email);
 
         Button send = getView().findViewById(R.id.btn_emailSend);
-        send.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String toS = "valentin2002.pf@gmail.com";
-                String subjectS = subject.getText().toString();
-                String messageS = message.getText().toString();
+        send.setOnClickListener(view1 -> {
+            String toS = "valentin2002.pf@gmail.com";
+            String subjectS = subject.getText().toString();
+            String messageS = message.getText().toString();
 
-                Intent email = new Intent(Intent.ACTION_SEND);
-                email.putExtra(Intent.EXTRA_EMAIL, new String[]{toS});
-                email.putExtra(Intent.EXTRA_SUBJECT, subjectS);
-                email.putExtra(Intent.EXTRA_TEXT, messageS);
+            Intent email = new Intent(Intent.ACTION_SEND);
+            email.putExtra(Intent.EXTRA_EMAIL, new String[]{toS});
+            email.putExtra(Intent.EXTRA_SUBJECT, subjectS);
+            email.putExtra(Intent.EXTRA_TEXT, messageS);
 
-                email.setType("message/rfc822");
-                startActivity(Intent.createChooser(email, "Choose app to send mail"));
-            }
+            email.setType("message/rfc822");
+            startActivity(Intent.createChooser(email, "Choose app to send mail"));
         });
     }
 
